@@ -18,6 +18,20 @@ function requestForForm(formID){
         }
     });
 }
+function sendPostRequest(action, type, data){
+    var url = 'backend/'+action+'.php';
+    data['type'] = type;
+    data['formid'] = "NOFORM";
+    $.ajax({
+        type: 'POST',
+        url:url,
+        data: data,
+        success: function(result) { 
+            console.log(result);
+            handleRequestRepsone(result);
+        }
+    });
+}
 
 function handleRequestRepsone(result){
     var data = $.parseJSON(result);

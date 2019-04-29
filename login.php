@@ -10,7 +10,7 @@ if(isset($_GET['message'])){
 }
 if(isset($_GET['logout'])){
     session_destroy();
-    echo "<h1>succesvol uitgelogd</h1>";
+    echo "<h1>Logged out</h1>";
 }else{
     if(isUserLoggedIn() == true){
         require_once "includes/error.php";
@@ -26,7 +26,7 @@ if(isset($_GET['logout'])){
     <input type="button" name="submitbutton" value="Submit" onclick="requestForForm('loginForm')">
     <div id="loginFormResponseMessage"></div>
 </form>
-<a href="register">registreer</a>
+<a href="register">register</a>
 
 <?php
 require_once "includes/footer.php";

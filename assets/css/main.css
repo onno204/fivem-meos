@@ -8,6 +8,7 @@ nav{
     position: fixed;
     top: 0;
     width: 100%;
+    z-index: 100;
 }
 nav ul {
     list-style-type: none;
@@ -15,9 +16,7 @@ nav ul {
     padding: 0;
     overflow: hidden;
 }
-nav li {
-    float: left;
-}
+nav li { float: left; }
 nav li a {
     display: block;
     color: white;
@@ -25,16 +24,41 @@ nav li a {
     padding: 14px 16px;
     text-decoration: none;
 }
-nav li a:hover:not(.active) {
-    background-color: #111;
+nav li a:hover/*:not(.active)*/ { background-color: #111; }
+/*.active { background-color: #4CAF50; }*/
+nav ul li .drodownContent{
+    display: none;
+    position: absolute;
+    min-width: inherit;
+    background-color: rgba(29,93,249);
 }
-.active {
-  background-color: #4CAF50;
+/*nav ul li:hover .drodownContent{ display: block; }*/
+nav ul li ul li{
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    float: none;
+    cursor: pointer;
+}
+
+nav ul li ul li:hover{
+    background-color: rgb(0,123,255);
+}
+nav ul li a.navitem-dropdown::after{ }
+.fa-chevron-down{
+    padding-left: 6px;
+    font-size: 70%;
 }
 
 /* container styles */
 main{
-    padding-top: 25px;
+    float: left;
+    background-color: rgb(255,255,255);
+    height: -webkit-fill-available;
+    top: 0px;
+    padding: 0px;
+    padding-top: 50px;
+    width: 100vw;
 }
-
-

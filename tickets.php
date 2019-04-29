@@ -6,8 +6,6 @@ doesUserHavePermission("tickets", true, true);
 require_once "includes/header.php";
 require_once "includes/nav.php";
 ?>
-
-<h1>tickets</h1>
 <form id="ticketForm" attr-action="tickets" attr-type="createTicket">
     titel: <input type="text" name="title"> <br>
     omschrijving: <textarea name="description"></textarea> <br>
@@ -15,32 +13,26 @@ require_once "includes/nav.php";
     <div id="ticketFormResponseMessage"></div>
 </form>
 
-
-<table>
-    <tr>
-        <th>titel</th>
-        <th>status</th>
-    </tr>
-    <?php
-        //id, price, title, description, paid, datecreated, duedate, paidon, foruser, foruserid, createdby, products, suspended
-        $stmt = $conn->prepare("SELECT * FROM tickets WHERE userid = ?");
-        $stmt->bind_param("i", $_SESSION['id']);
-        $stmt->execute();
-        $result = $stmt->get_result();
-        while ($data = $result->fetch_assoc()){
-            ?>
-            <tr onclick="window.location.href = 'tickets?ticket='">
-                <th><?php echo $data['id']; ?></th>
-                <th><?php echo $data['price']; ?></th>
-            </tr>
-            <?php
-        }
-    ?>
-</table>
-
+        
 <div id="ticketviewer">
-	
+    <div class="ticketviewerTitle"></div>
+    <div class="ticketviewerresponse">
+        <div class="ticketviewerresponseleftinfo">
+            <label>Onno</label><span>12-2-2019</span>
+        </div>
+        <div>dsajdklasjkdlasjklasjdkasjals & dasdasdasds</div>
+    </div>
 </div>
+<br>
+<br>
+<br>
+<form id="ticketresponseForm" attr-action="tickets" attr-type="reponsetoTicket">
+    response: <textarea name="responsemessage"></textarea> <br>
+    <input type="button" name="submitbutton" value="Submit" onclick="requestForForm('ticketresponseForm')">
+    <input type="hidden" name="ticketid" value="0">
+    <div id="ticketresponseFormResponseMessage"></div>
+</form>
+
 
 <?php
 require_once "includes/footer.php";
