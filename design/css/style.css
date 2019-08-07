@@ -1,0 +1,75 @@
+.kop-achtergrond {
+    height: 59px;
+    width: 1920px;
+    background-color: #004682;
+}
+
+.politielogo1 {
+    margin-left: 22px;
+    margin-top: 10px;
+}
+
+.meos-text{
+    color: white;
+    font-family: Bahnschrift;
+    font-size: 25px;
+    margin-left: 773px;
+    margin-top:18px;
+}
+
+.box{
+	border:0;
+	background-color: #004682;
+	display: block;
+    margin: 20px auto;
+    margin-top: 115px;
+	text-align: center;
+	border: 3px solid #004682;
+	padding: 14px 10px;
+	width: 556px;
+	outline: none;
+	color: white;
+	transition: 0.25s;
+}
+.box h1{
+	color: white;
+	text-transform: uppercase;
+	font-weight: 500;
+}	
+
+.username{
+    border: 3px solid #004682;
+    text-align: center;
+    width: 390px;
+    height: 50px;
+    border-radius: 10px;
+}
+
+.wachtwoord{
+    border: 3px solid #004682;
+    text-align: center;
+    width: 390px;
+    height: 50px;
+    border-radius: 10px;
+}
+
+.login{
+    border: 3px solid #2D9900;
+    text-align: center;
+    width: 390px;
+    height: 50px;
+    border-radius: 10px;
+    background-color: #2D9900;
+    color: #FFF;
+}
+
+.footer{
+    background-color: #004682;
+    height: 62px;
+    margin-top: 415px;
+    text-align: center;
+    color: #FFF;
+}
+
+
+
