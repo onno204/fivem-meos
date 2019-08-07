@@ -42,7 +42,7 @@ if(isset($_POST['type']) && $_POST['type']=="login"){
             $_SESSION['email'] = $userexists['email'];
             $_SESSION['phone'] = $userexists['phone'];
             $_SESSION['discord'] = $userexists['discord'];
-            $_SESSION['token'] = md5(uniqid(rand(), true));
+            $_SESSION['token'] = hash('sha256', uniqid(rand(), true));
 
 
             $stmt = $conn->prepare("UPDATE users SET lastloginip=?, lastlogindate=?, token=? WHERE id=?");

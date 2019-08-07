@@ -1,4 +1,7 @@
 <?php
+if ($_SERVER['REQUEST_METHOD'] !== 'POST') {
+  die("This is the backend");
+}
 require_once "../config.php";
 
 function backendAuthCheck($perm, $formID){
