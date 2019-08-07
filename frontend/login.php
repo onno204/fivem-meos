@@ -1,16 +1,18 @@
-<?php 
-require_once "config.php";
-doesUserHavePermission("login", true);
+<?php
+require_once "../config.php";
+doesUserHavePermission("login", true, false, false);
 
-require_once "includes/header.php";
-require_once "includes/nav.php";
+require_once "../includes/header.php";
+require_once "../includes/nav.php";
 
 if(isset($_GET['message'])){
     echo "<h1>".htmlToPlainText($_GET['message'])."</h1>";
 }
 if(isset($_GET['logout'])){
     session_destroy();
-    echo "<h1>Logged out</h1>";
+    redirectToPage("login?loggedout");
+}elseif(isset($_GET['loggedout'])){
+  echo "<h1>Logged out</h1>";
 }else{
     if(isUserLoggedIn() == true){
         require_once "includes/error.php";
@@ -29,5 +31,4 @@ if(isset($_GET['logout'])){
 <a href="register">register</a>
 
 <?php
-require_once "includes/footer.php";
-
+require_once "../includes/footer.php";

@@ -48,7 +48,10 @@ if(isset($_POST['type']) && $_POST['type']=="login"){
             $stmt = $conn->prepare("UPDATE users SET lastloginip=?, lastlogindate=?, token=? WHERE id=?");
             $stmt->bind_param("sssi", strval(getUserIpAddr()), strval(microtime(true)), $_SESSION['token'], $_SESSION['id']);
             $stmt->execute();
-            sendJsonResponseAndDie(200, 'green', $formID, 'Login confirmed', "redirect", "dashboard");
+            addToJsonResponse("setbgcolor", $formID."ResponseMessage", "green");
+            addToJsonResponse("sethtml", $formID."ResponseMessage", "Login confirmed");
+            addToJsonResponse("redirect", "dashboard");
+            setJsonResponseCode(200);
         }
     }
 }

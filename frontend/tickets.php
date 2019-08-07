@@ -1,10 +1,10 @@
-<?php 
-require_once "config.php";
+<?php
+require_once "../config.php";
 doesUserHavePermission("tickets", true, true);
 
 
-require_once "includes/header.php";
-require_once "includes/nav.php";
+require_once "../includes/header.php";
+require_once "../includes/nav.php";
 ?>
 <form id="ticketForm" attr-action="tickets" attr-type="createTicket">
     titel: <input type="text" name="title"> <br>
@@ -13,7 +13,7 @@ require_once "includes/nav.php";
     <div id="ticketFormResponseMessage"></div>
 </form>
 
-        
+
 <div id="ticketviewer">
     <div class="ticketviewerTitle"></div>
     <div class="ticketviewerresponse">
@@ -35,4 +35,4 @@ require_once "includes/nav.php";
 
 
 <?php
-require_once "includes/footer.php";
+require_once "../includes/footer.php";

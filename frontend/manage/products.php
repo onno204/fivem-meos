@@ -1,10 +1,10 @@
-<?php 
-require_once "../config.php";
+<?php
+require_once "../../config.php";
 doesUserHavePermission("manageproducts", true, true);
 
- 
-require_once "../includes/header.php";
-require_once "../includes/nav.php";
+
+require_once "../../includes/header.php";
+require_once "../../includes/nav.php";
 
 ?>
 <h1>manage products</h1>
@@ -100,6 +100,4 @@ require_once "../includes/nav.php";
 </table>
 
 <?php
-    require_once "../includes/footer.php";
-
-
+    require_once "../../includes/footer.php";

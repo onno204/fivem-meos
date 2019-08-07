@@ -1,6 +1,5 @@
 <?php
 
-
 $config =  array(
     'serverinfo' => [
         // Volledige address van de site
@@ -42,12 +41,16 @@ $config =  array(
 //                Aanbevolen om niks hieronder aan te passen
 // / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / /
 
+// Development:
+// error_reporting(0);
+
 // Merge user perms
 $config['permissions']['users'] = array_merge($config['permissions']['users'], $config['permissions']['everyone']);
 $config['permissions']['admins'] = array_merge($config['permissions']['admins'], $config['permissions']['users']);
 
 // inclused
 require_once "includes/frontend-functions/verification.php";
+require_once "includes/frontend-functions/random.php";
 
 //mysql
 session_start();

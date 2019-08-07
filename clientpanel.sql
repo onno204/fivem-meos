@@ -131,10 +131,6 @@ CREATE TABLE IF NOT EXISTS `users` (
 --
 
 INSERT INTO `users` (`id`, `username`, `usergroup`, `password`, `firstname`, `lastname`, `email`, `phone`, `discord`, `lastloginip`, `lastlogindate`, `token`) VALUES
-(1, 'onnovanhelfteren', 'users', 'ujh', 'kj', 'j', 'jkhj', 'kh', 'jhj', 'khj', 'h', NULL),
-(2, 'onnovanhelfteren1', 'users', '$2y$07$au2QCP0DP0RMLdFtL5.9luhGr8Dhb5GFiA/R4xgI5VaZKJy9XUlWy', '123', '123', '123', '123', '123', '::1', '1556052890.2283', NULL),
-(3, 'onnovanhelfteren2', 'users', '$2y$07$cmUQfkyxWLVa2ocEitUtsu1y1MIaJ2bme2.13aiHQ2YGEj3QkYE2a', '123', '123', '123', '123', '123', '::1', '1556052921.6295', NULL),
-(4, '123', 'admins', '$2y$07$YgDWoPuSk7wpnn2JEyXCWe4XgjHrebyxt20Gzqoa5jtJ0DVDAcuSC', 'Onno', 'Helfteren', 'private@gmail.com', '612345678', '132', '::1', '1556062377.355', '1776240fe32dd95977232bd1c16e93bd'),
 (5, '123123123123123', 'users', '$2y$07$6xbCNNhwmNZO/wTSHYBBjOUvXpLIgKPoDAieZX0PaRV0RocqqUxyK', 'Onno1231231231', '213123123123123', '123123123', '123123', '123123123', '::1', '1556056655.8259', NULL);
 COMMIT;
 

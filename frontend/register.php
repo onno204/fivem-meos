@@ -1,5 +1,5 @@
-<?php 
-require_once "config.php";
+<?php
+require_once "../config.php";
 doesUserHavePermission("register", true);
 
 
@@ -7,8 +7,8 @@ if(isUserLoggedIn() == true){
     require_once "includes/error.php";
     startError(200, "Alread logged in", "You'r already logged in");
 }
-require_once "includes/header.php";
-require_once "includes/nav.php";
+require_once "../includes/header.php";
+require_once "../includes/nav.php";
 
 if(doesUserHavePermission("register") == false){
     die("<h1>You don't have permission to view this page</h1>");
@@ -33,5 +33,5 @@ if(doesUserHavePermission("register") == false){
 
 
 <?php
-    require_once "includes/footer.php";
+    require_once "../includes/footer.php";
 ?>

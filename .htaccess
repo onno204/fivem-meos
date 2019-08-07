@@ -1,5 +1,21 @@
+
+RewriteEngine On
+
+# redirect example/index.php to example/frontend/index.php
+RewriteCond %{REQUEST_URI} !frontend/ [NC]
+RewriteCond %{REQUEST_URI} !backend/ [NC]
+RewriteRule .* frontend/$0 [NC]
+
+
+
+
 ## hide .php extension
 # To redirect /dir/foo.php to /dir/foo
-RewriteEngine On
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteRule ^([^.]+)$ $1.php [NC,L]
+
+# REQUEST_FILENAME: /web/webroot/askapache.com/pro/mod_rewrite/index.php
+# REQUEST_URI: /pro/mod_rewrite/index.php
+# SCRIPT_FILENAME: /web/webroot/askapache.com/pro/mod_rewrite/index.php
+# SCRIPT_URL: /pro/mod_rewrite/index.php
+# # # # # # # # # # #

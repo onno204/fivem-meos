@@ -5,21 +5,27 @@ if ($_SERVER['REQUEST_METHOD'] !== 'POST') {
 require_once "../config.php";
 
 function backendAuthCheck($perm, $formID){
-    if(doesUserHavePermission($perm) == false){
-        sendJsonResponse(403, 'red', $formID, 'No permissions');
-    }
+  if(doesUserHavePermission($perm, false, false, false) == false){
+    sendJsonResponse(403, 'red', $formID, 'No permissions');
+  }
 }
 
-function sendJsonResponseAndDie($code, $color, $formID, $message, $action="", $actionData="", $actionData2=""){
-    $returnMsg = array(
-        'code' => $code,
-        'color' => $color,
-        'formid' => $formID,
-        'message' => $message,
-        'action' => $action,
-        'actiondata' => $actionData,
-        'actiondata2' => $actionData2,
-    );
-    http_response_code($returnMsg['code']);
-    die(json_encode($returnMsg));
+$jsonResponse = array();
+function addToJsonResponse($action="", $actionData="", $actionData2=""){
+  global $jsonResponse;
+  $newJsonResp = array(
+    'action' => $action,
+    'actiondata' => $actionData,
+    'actiondata2' => $actionData2,
+  );
+  array_push($jsonResponse, $newJsonResp);
 }
+function setJsonResponseCode($code){
+  http_response_code($code);
+}
+function sendJsonResponseAndDie(){
+  global $jsonResponse;
+  header('Content-Type: application/json');
+  die(json_encode($jsonResponse));
+}
+register_shutdown_function('sendJsonResponseAndDie');
