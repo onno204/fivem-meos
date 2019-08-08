@@ -8,8 +8,8 @@ require_once "../includes/nav.php";
 ?>
 
 <form class="box" method="post">
-			<h1 style="font-family: Bahnschrift; color: #FFF;">Persoon zoeken</h1>
-			<input class="naam" type="text" name="" placeholder="Voornaam en Achternaam">
+			<h1 style="font-family: Bahnschrift; color: #FFF;">Voertuig Zoeken</h1>
+			<input class="kenteken" type="text" name="" placeholder="Kenteken">
 			<p></p>
 			<input class="zoeken" type="submit" name="" value="Zoeken">
 			<p></p>
