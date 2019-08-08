@@ -5,30 +5,28 @@ doesUserHavePermission("login", true, false, false);
 require_once "../includes/header.php";
 require_once "../includes/nav.php";
 
-if(isset($_GET['message'])){
-    echo "<h1>".htmlToPlainText($_GET['message'])."</h1>";
-}
 if(isset($_GET['logout'])){
     session_destroy();
-    redirectToPage("login?loggedout");
-}elseif(isset($_GET['loggedout'])){
-  echo "<h1>Logged out</h1>";
+    redirectToPage("login");
 }else{
-    if(isUserLoggedIn() == true){
-        require_once "includes/error.php";
-        startError(200, "Alread logged in", "You'r already logged in");
-    }
+  if(isUserLoggedIn() == true){
+    require_once "../includes/error.php";
+    redirectToPage("dashboard");
+    //startError(200, "Alread logged in", "You'r already logged in");
+  }
 }
 ?>
 
-<h1>Inloggen</h1>
-<form id="loginForm" attr-action="login" attr-type="login">
-    username: <input type="text" name="username"> <br>
-    password: <input type="password" name="password"> <br>
-    <input type="button" name="submitbutton" value="Submit" onclick="requestForForm('loginForm')">
-    <div id="loginFormResponseMessage"></div>
+<form class="box" id="loginForm" attr-action="login" attr-type="login">
+  <h1 style="font-family: Bahnschrift; color: #FFF;">Inloggen</h1>
+  <div class="login-status" id="loginFormResponseMessage"></div>
+  <input class="username" type="text" name="username" placeholder="Gebruikersnaam">
+  <p></p>
+  <input class="wachtwoord" type="password" name="password" placeholder="Wachtwoord">
+  <p></p>
+  <input class="login" type="submit" name="" value="Inloggen" onclick="requestForForm('loginForm')">
+  <p></p>
+  <a>Wachtwoord vergeten?</a>
 </form>
-<a href="register">register</a>
-
 <?php
 require_once "../includes/footer.php";

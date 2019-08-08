@@ -48,6 +48,12 @@ function handleRequestRepsone(data){
       case "setbgcolor":
         $("#"+action['actiondata']+"").css({"background-color": action['actiondata2']});
         break;
+      case "unlockform":
+        $("#"+action['actiondata']+" :input").each(function(){ $(this).removeAttr('disabled'); });
+        break;
+      case "setcolor":
+        $("#"+action['actiondata']+"").css({"color": action['actiondata2']});
+        break;
       case "sethtml":
         $("#"+action['actiondata']).html(action['actiondata2']);
         break;

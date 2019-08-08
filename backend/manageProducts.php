@@ -13,21 +13,21 @@ if(isset($_POST['type']) && $_POST['type']=="addCategorie"){
   if(strlen($cattitle) <1 ){ $enteredAll = false; }
   if(strlen($catdiscription) <1 ){ $enteredAll = false; }
   if($enteredAll !== true){
-    notAllFieldsFilledIn();
+    notAllFieldsFilledIn($formID);
   }else {
     $stmt = $conn->prepare("INSERT INTO category (title, description) VALUES (?,?)");
     $stmt->bind_param("ss", $cattitle, $catdiscription);
     $stmt->execute();
     addToJsonResponse("setbgcolor", $formID."ResponseMessage", "green");
     addToJsonResponse("sethtml", $formID."ResponseMessage", "Categorie addded");
+    addToJsonResponse("unlockform", $formID);
     addToJsonResponse("reload");
-    setJsonResponseCode(201);
   }
 }
 
 if(isset($_POST['type']) && $_POST['type']=="addProduct"){
   if(!isset($_POST['prodtitle']) && !isset($_POST['proddiscription']) && !isset($_POST['prodprice']) && !isset($_POST['prodcategory'])){
-    notAllFieldsFilledIn();
+    notAllFieldsFilledIn($formID);
   }
   $enteredAll = true;
   $prodtitle = $_POST['prodtitle'];
@@ -40,14 +40,14 @@ if(isset($_POST['type']) && $_POST['type']=="addProduct"){
   if(strlen($prodcategory) <1 ){ $enteredAll = false; }
 
   if($enteredAll !== true){
-    notAllFieldsFilledIn();
+    notAllFieldsFilledIn($formID);
   }else {
     $stmt = $conn->prepare("INSERT INTO products (title, description, price, categoryid) VALUES (?,?,?,?)");
     $stmt->bind_param("ssss", $prodtitle, $proddiscription, $prodprice, $prodcategory);
     $stmt->execute();
     addToJsonResponse("setbgcolor", $formID."ResponseMessage", "green");
     addToJsonResponse("sethtml", $formID."ResponseMessage", "Product addded");
+    addToJsonResponse("unlockform", $formID);
     addToJsonResponse("reload");
-    setJsonResponseCode(201);
   }
 }

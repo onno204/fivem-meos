@@ -2,7 +2,6 @@
 require_once "../config.php";
 doesUserHavePermission("invoices", true, true);
 
-
 require_once "../includes/header.php";
 require_once "../includes/nav.php";
 ?>

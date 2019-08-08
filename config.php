@@ -8,8 +8,6 @@ $config =  array(
         'subpath' => 'meos/',
         // Huidige pagina, products
         'currentpage' => pathinfo(basename($_SERVER['SCRIPT_NAME']), PATHINFO_FILENAME),
-        // Huidige pagina + subdir, manage/products
-        'currentpagelocation' => substr(str_replace('/cclientpanel','',pathinfo($_SERVER['SCRIPT_NAME'], PATHINFO_DIRNAME)).'/'.pathinfo(basename($_SERVER['SCRIPT_NAME']), PATHINFO_FILENAME),1),
     ],
     // Database settings
     'db' => [
@@ -35,6 +33,8 @@ $config =  array(
         ]
     ]
 );
+// Huidige pagina + subdir
+$config["serverinfo"]['currentpagelocation'] = str_replace(pathinfo($_SERVER['SCRIPT_NAME'], PATHINFO_DIRNAME),$config["serverinfo"]['subpath'].'frontend/','').'/'.pathinfo(basename($_SERVER['SCRIPT_NAME']), PATHINFO_FILENAME);
 
 // / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / /
 //               Recommended to change nothing below this line
