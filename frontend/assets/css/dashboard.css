@@ -1,0 +1,61 @@
+.nav-links{
+    background-color: #004682;
+    height: 980px;
+    width: 249px;
+}
+
+.back{
+    margin-left: 204px;
+    margin-top: 70px;
+}
+
+.persoon-nav{
+    color:white;
+    border: 3px solid #004682;
+    font-size: 18px;
+    height: 50px;
+    margin-left: 25px;
+    margin-top: 30px;    
+}
+
+.voertuig-nav{
+    color:white;
+    border: 3px solid #004682;
+    font-size: 18px;
+    height: 50px;
+    margin-left: 25px;
+    margin-top: 15px;    
+}
+
+.documenten-nav{
+    color:white;
+    border: 3px solid #004682;
+    font-size: 18px;
+    height: 50px;
+    margin-left: 25px;
+    margin-top: 15px;      
+}
+
+.instellingen-nav{
+    color:white;
+    border: 3px solid #004682;
+    font-size: 18px;
+    height: 50px;
+    margin-left: 25px;
+    margin-top: 15px;       
+}
+
+.uitloggen-nav{
+    color:white;
+    border: 3px solid #004682;
+    font-size: 18px;
+    height: 50px;
+    margin-left: 25px;
+    margin-top: 15px;     
+}
+
+.blauw-vakje{
+    background-color: #004682;
+    width: 383px;
+    height: 150px;
+}
