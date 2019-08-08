@@ -9,7 +9,7 @@ function doesUserHavePermission($permission, $dieIfNoPerms=false, $dieIfNotLogge
     }
   if($dieIfNotLoggedIn){
     if(isUserLoggedIn() === false){
-      require_once "includes/error.php";
+      require_once "../../includes/error.php";
       startErrorCode(401);
     }
   }
@@ -21,7 +21,7 @@ function doesUserHavePermission($permission, $dieIfNoPerms=false, $dieIfNotLogge
     return true;
   }
   if($dieIfNoPerms){
-    require_once "includes/error.php";
+    require_once "../../includes/error.php";
     startErrorCode(403);
   }
   return false;

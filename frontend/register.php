@@ -10,7 +10,7 @@ if(isUserLoggedIn() == true){
 require_once "../includes/header.php";
 require_once "../includes/nav.php";
 
-if(doesUserHavePermission("register") == false){
+if(doesUserHavePermission("register", false, false, false) == false){
     die("<h1>You don't have permission to view this page</h1>");
 }
 ?>
