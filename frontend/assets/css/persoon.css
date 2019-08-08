@@ -1,0 +1,38 @@
+.box{
+	border:0;
+	background-color: #004682;
+	display: block;
+    margin: 20px auto;
+    margin-top: 115px;
+	text-align: center;
+	border: 3px solid #004682;
+	padding: 14px 10px;
+	width: 630px;
+	outline: none;
+	color: white;
+	transition: 0.25s;
+}
+.box h1{
+	color: white;
+	text-transform: uppercase;
+	font-weight: 500;
+}	
+
+.naam{
+    border: 3px solid #004682;
+    text-align: center;
+    width: 600px;
+    height: 50px;
+    border-radius: 10px;
+}
+
+
+.zoeken{
+    border: 3px solid #2D9900;
+    text-align: center;
+    width: 600px;
+    height: 50px;
+    border-radius: 10px;
+    background-color: #2D9900;
+    color: #FFF;
+}
