@@ -2,12 +2,10 @@
 
 $config =  array(
     'serverinfo' => [
-        // Volledige address van de site
+        // Volledige address van de site, http://localhost/meos/
         'serveradress' => "http://localhost/meos/",
-        // Subpath van de site (alles wat na de eerste slah komt)
+        // Subpath van de site (alles wat na de eerste slah komt), meos/
         'subpath' => 'meos/',
-        // Huidige pagina, products
-        'currentpage' => pathinfo(basename($_SERVER['SCRIPT_NAME']), PATHINFO_FILENAME),
     ],
     // Database settings
     'db' => [
@@ -16,7 +14,7 @@ $config =  array(
         'username' => 'root',
         'password' => '',
     ],
-
+    // Permissie settings
     'permissions' => [
         "admins"=> [
             "manageproducts",
@@ -33,9 +31,6 @@ $config =  array(
         ]
     ]
 );
-// Huidige pagina + subdir
-$config["serverinfo"]['currentpagelocation'] = str_replace(pathinfo($_SERVER['SCRIPT_NAME'], PATHINFO_DIRNAME),$config["serverinfo"]['subpath'].'frontend/','').'/'.pathinfo(basename($_SERVER['SCRIPT_NAME']), PATHINFO_FILENAME);
-
 // / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / / /
 //               Recommended to change nothing below this line
 //                Aanbevolen om niks hieronder aan te passen
@@ -43,6 +38,10 @@ $config["serverinfo"]['currentpagelocation'] = str_replace(pathinfo($_SERVER['SC
 
 // Development:
 // error_reporting(0);
+
+// Huidige pagina + subdir
+$config["serverinfo"]['currentpagelocation'] = str_replace(pathinfo($_SERVER['SCRIPT_NAME'], PATHINFO_DIRNAME),$config["serverinfo"]['subpath'].'frontend/','').'/'.pathinfo(basename($_SERVER['SCRIPT_NAME']), PATHINFO_FILENAME);
+$config["serverinfo"]['currentpage'] = pathinfo(basename($_SERVER['SCRIPT_NAME']), PATHINFO_FILENAME);
 
 // Merge user perms
 $config['permissions']['users'] = array_merge($config['permissions']['users'], $config['permissions']['everyone']);

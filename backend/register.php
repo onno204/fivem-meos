@@ -19,9 +19,9 @@ if(isset($_POST['type']) && $_POST['type']=="register"){
     if(strlen($email) <1 ){ $enteredAll = false; }
     if(strlen($phone) <1 ){ $enteredAll = false; }
     if(strlen($discord) <1 ){ $enteredAll = false; }
-    
+
     if($enteredAll !== true){
-        sendJsonResponseAndDie(200, 'orange', $formID, 'Please enter something in all fields');
+      notAllFieldsFilledIn($formID);
     }else {
         $passwordhash = password_hash($password, PASSWORD_BCRYPT, ["cost" => 7]);
         $stmt = $conn->prepare("SELECT username FROM users WHERE username = ?");
@@ -35,12 +35,8 @@ if(isset($_POST['type']) && $_POST['type']=="register"){
         $stmt->bind_param("sssssssss", $username,$passwordhash, $firstname, $lastname, $email, $phone, $discord, strval(getUserIpAddr()), strval(microtime(true)));
         $stmt->execute();
         //var_dump($stmt->error);
-        sendJsonResponseAndDie(200, 'green', $formID, 'Register succes', "redirect", "login?message=Succesvol+geregistreerd%2C+log+nu+in");
+        addToJsonResponse("setcolor", $formID."ResponseMessage", "green");
+        addToJsonResponse("sethtml", $formID."ResponseMessage", "Registreren succesvol");
+        addToJsonResponse("redirect", "login");
     }
 }
-
-
-
-
-
-
