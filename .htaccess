@@ -11,11 +11,7 @@ RewriteRule .* frontend/$0 [NC]
 
 ## hide .php extension
 # To redirect /dir/foo.php to /dir/foo
-RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}\.php -f
+RewriteCond %{REQUEST_FILENAME}\.php ^(.*)\.php(.*)$
 RewriteRule ^([^.]+)$ $1.php [NC,L]
-
-# REQUEST_FILENAME: /web/webroot/askapache.com/pro/mod_rewrite/index.php
-# REQUEST_URI: /pro/mod_rewrite/index.php
-# SCRIPT_FILENAME: /web/webroot/askapache.com/pro/mod_rewrite/index.php
-# SCRIPT_URL: /pro/mod_rewrite/index.php
-# # # # # # # # # # #
