@@ -1,0 +1,46 @@
+.afbeelding{
+    margin-top:136px;
+    margin-left:270px
+}
+
+.naam{
+    margin-left:227px;
+    margin-top:15px;
+    font-family: Bahnschrift;
+    font-size:20px;
+}
+
+.button {
+    margin-left:200px;
+    background-color: #004682; 
+    color: #FFF; 
+    width: 270px; 
+    height: 45px; 
+    border: 1px solid #004682; 
+    font-size: 18px; 
+    border-radius: 6px; 
+    transition-duration: .3s; 
+    overflow: hidden;
+}
+
+.button:hover {
+    background-color: #2D9900; 
+    color: #FFF; 
+    cursor: pointer;
+}
+
+.persoon-buttons{
+    display:inline-block;
+}
+
+.informatie{
+    background-color: #004682; 
+    margin-left: 227px;
+    width: 900px;
+    border: 1px solid #004682; 
+    height: 40px;
+    font-family: Bahnschrift;
+    text-align: center;
+    font-size: 35px;
+}
+
