@@ -1,6 +1,6 @@
 <?php
 require_once "../config.php";
-doesUserHavePermission("register", true);
+doesUserHavePermission("register", true, false, false);
 
 
 if(isUserLoggedIn() == true){
