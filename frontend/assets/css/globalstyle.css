@@ -3,6 +3,7 @@
     width: 100%;
     background-color: #004682;
     position: relative;
+    z-index: 1;
 }
 
 .kop-achtergrond .politielogo1 {
@@ -21,8 +22,8 @@
 }
 footer{
     background-color: #004682;
-    height: 43px;
-    padding: 10px;
+    height: 33px;
+    padding: 4px;
     width: 100%;
     text-align: center;
     color: #FFF;

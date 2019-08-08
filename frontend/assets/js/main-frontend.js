@@ -7,3 +7,7 @@ $(document).ready(function(){
 		$(this).children(".drodownContent").stop().slideUp();
 	});//.addClass("navitem-containsdropdown");
 });
+
+function toggleNavBar(){
+	$("nav").toggleClass("nav-collaps");
+}
