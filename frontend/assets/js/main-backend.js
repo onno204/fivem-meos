@@ -22,24 +22,19 @@ function sendPostRequest(action, type, data){
   var url = 'backend/'+action+'.php';
   data['type'] = type;
   data['formid'] = "NOFORM";
-  $.ajax({
-    type: 'POST',
-    url: url,
-    data: data,
-    success: function(result) {
-      console.log(result);
-      handleRequestRepsone(result);
-    }
+  $.post(url, data, function(result){
+    console.log(result);
+    handleRequestRepsone(result);
   });
 }
 
 function handleRequestRepsone(data){
   $("form#"+data['formid']+" :input").each(function(){ $(this).removeAttr('disabled'); });
-  foreach (action in data){
-    console.log ("action: ", action);
+  for (var i=0; i < data.length; i++) {
+    action = data[i];
     switch(action['action'].toLowerCase()) {
       case "redirect":
-        // window.location.href = data['actiondata'];
+        window.location.href = action['actiondata'];
         break;
       case "alert":
         alert(action['actiondata']);
@@ -54,7 +49,7 @@ function handleRequestRepsone(data){
         $("#"+action['actiondata']+"").css({"background-color": action['actiondata2']});
         break;
       case "sethtml":
-        $("#"+action['actiondata']).HTML(action['actiondata2']);
+        $("#"+action['actiondata']).html(action['actiondata2']);
         break;
       case "appendhtml":
         $("#"+action['actiondata']).appendHTML(action['actiondata2']);

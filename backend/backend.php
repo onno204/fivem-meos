@@ -9,7 +9,12 @@ function backendAuthCheck($perm, $formID){
     sendJsonResponse(403, 'red', $formID, 'No permissions');
   }
 }
-
+function notAllFieldsFilledIn(){
+  addToJsonResponse("setbgcolor", $formID."ResponseMessage", "orange");
+  addToJsonResponse("sethtml", $formID."ResponseMessage", "Please enter something in all fields");
+  setJsonResponseCode(400);
+  sendJsonResponseAndDie();
+}
 $jsonResponse = array();
 function addToJsonResponse($action="", $actionData="", $actionData2=""){
   global $jsonResponse;
