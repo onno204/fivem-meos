@@ -28,4 +28,4 @@
   <script src="<?php echo $config['serverinfo']['serveradress']; ?>/assets/js/main-backend.js"></script>
   <script src="<?php echo $config['serverinfo']['serveradress']; ?>/assets/js/main-frontend.js"></script>
 </head>
-<body style="background-image:url('assets/img/achtergrond.png');">
+<body>

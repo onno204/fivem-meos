@@ -9,7 +9,7 @@
 // Only show nav if user is loggedin
 if (isUserLoggedIn()) {
 ?>
-  <nav>
+  <nav class="nav-collaps">
     <a href="dashboard" <?php if('dashboard'===$config['serverinfo']['currentpage']){echo "class=\"active\"";} ?> ><label class="fas fa-columns"></label><span>dashboard</span></a>
     <a href="persoon" <?php if('persoon'===$config['serverinfo']['currentpage']){echo "class=\"active\"";} ?> ><label class="fas fa-user"></label><span>Persoon</span></a>
     <a href="voertuig" <?php if('voertuig'===$config['serverinfo']['currentpage']){echo "class=\"active\"";} ?> ><label class="fas fa-car"></label><span>Voertuig</span></a>
