@@ -22,7 +22,8 @@ require_once "../includes/nav.php";
         <p class="naam">Lengte: "Lengte:"</p>
         <p class="naam">Gezocht: "Button:"</p>
         <p class="naam">Geborden op: "Geboortedatum:"</p>
-      </div>      
+        <p class="naam">Rijverbod: "Button:"</p>
+      </div>       
 
 <?php
 require_once "../includes/footer.php";
