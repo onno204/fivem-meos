@@ -44,3 +44,13 @@
     font-size: 35px;
 }
 
+.naam2{
+    margin-left:227px;
+    margin-top:15px;
+    font-family: Bahnschrift;
+    font-size:20px;
+    border: 3px solid #FFF;   
+    width: 900px;
+    border-radius:5px;  
+}
+
