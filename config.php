@@ -42,6 +42,7 @@ $config =  array(
 // Huidige pagina + subdir
 $config["serverinfo"]['currentpagelocation'] = str_replace(pathinfo($_SERVER['SCRIPT_NAME'], PATHINFO_DIRNAME),$config["serverinfo"]['subpath'].'frontend/','').'/'.pathinfo(basename($_SERVER['SCRIPT_NAME']), PATHINFO_FILENAME);
 $config["serverinfo"]['currentpage'] = pathinfo(basename($_SERVER['SCRIPT_NAME']), PATHINFO_FILENAME);
+$config["serverinfo"]['currentpageFrontendPath'] = str_replace("/".$config["serverinfo"]['subpath']."frontend", '', pathinfo($_SERVER['SCRIPT_NAME'], PATHINFO_DIRNAME)).'/'.$config["serverinfo"]['currentpage'];
 
 // Merge user perms
 $config['permissions']['users'] = array_merge($config['permissions']['users'], $config['permissions']['everyone']);

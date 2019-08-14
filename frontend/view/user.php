@@ -1,10 +1,10 @@
 <?php
-require_once "../config.php";
+require_once "../../config.php";
 doesUserHavePermission("dashboard", true, true);
 
 
-require_once "../includes/header.php";
-require_once "../includes/nav.php";
+require_once "../../includes/header.php";
+require_once "../../includes/nav.php";
 ?>
 
     <div class="persoon-buttons">
@@ -14,8 +14,8 @@ require_once "../includes/nav.php";
       <h6></h6>
       <button class="button">Bekeuringen</button>
       <h6></h6>
-      <button class="button">Voertuigen</button>   
-    </div>   
+      <button class="button">Voertuigen</button>
+    </div>
     <div class="persoon-buttons">
       <h6 class="informatie" style="color: #FFF;">Informatie</h6>
         <p class="naam">Geborden op: "Geboortedatum:"</p>
@@ -23,7 +23,7 @@ require_once "../includes/nav.php";
         <p class="naam">Gezocht: "Button:"</p>
         <p class="naam">Geborden op: "Geboortedatum:"</p>
         <p class="naam">Rijverbod: "Button:"</p>
-      </div>       
+      </div>
 
 <?php
-require_once "../includes/footer.php";
+require_once "../../includes/footer.php";
