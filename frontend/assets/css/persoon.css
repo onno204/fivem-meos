@@ -5,7 +5,8 @@
     margin: 20px auto;
     margin-top: 115px;
 	text-align: center;
-	border: 3px solid #004682;
+    border: 3px solid #004682;
+    border-radius: 4px;
 	padding: 14px 10px;
 	width: 630px;
 	outline: none;
