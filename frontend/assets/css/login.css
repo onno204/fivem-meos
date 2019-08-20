@@ -27,6 +27,10 @@
 	transition: 0.25s;
 	outline: none;
 }
+
+.inputfield{
+	outline:none;
+}
 .box h1{
 	color: white;
 	text-transform: uppercase;
