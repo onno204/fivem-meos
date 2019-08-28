@@ -16,9 +16,6 @@ redirectToPage("dashboard");
     }
 }
 ?>
-<div class="login-background">
-    <img src="assets/img/achtergrond.png" alt="" />
-</div>
 <form class="box" id="loginForm" attr-action="login" attr-type="login">
     <h1 style="font-family: Bahnschrift; color: #FFF;">Inloggen</h1>
     <div class="login-status" id="loginFormResponseMessage"></div>
