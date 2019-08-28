@@ -2,7 +2,6 @@
 
 <div class="kop-achtergrond">
     <img class= "politielogo1" src="assets/img/politielogo1.png" width="121" height="31">
-    <a class="meos-text" style="color: white;"><strong>FOCUS</strong></a>
 </div>
 
 <?php
