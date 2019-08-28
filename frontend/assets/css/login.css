@@ -55,3 +55,10 @@
 	color: #FFF;
 	outline: none;
 }
+
+.focus-logo{
+	background-color:#273574;
+	margin-left: 0px;
+	margin-right:0px;
+	text-align:center;
+}
