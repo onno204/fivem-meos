@@ -46,8 +46,9 @@
     border: 3px solid #273574;
     text-align: center;
     width: 390px;
-    height: 50px;
-    border-color:#000000;
+	height: 50px;
+	border:1px solid #000000;
+
 }
 
 .login{
