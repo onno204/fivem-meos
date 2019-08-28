@@ -16,7 +16,7 @@ redirectToPage("dashboard");
     }
 }
 ?>
-    <img class="focus-logo" src="focus.png" width="430" height="117">
+    <img class="../frontend/img/focus-logo" src="focus.png" width="430" height="117">
 <form class="box" id="loginForm" attr-action="login" attr-type="login"> 
     <div class="login-status" id="loginFormResponseMessage"></div>
     <input class="inputfield" type="text" name="username" placeholder="Gebruikersnaam">
