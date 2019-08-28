@@ -18,7 +18,9 @@ redirectToPage("dashboard");
 ?>
 
 <form class="box" id="loginForm" attr-action="login" attr-type="login">
-<img src="assets/img/achtergrond.png" alt="" />
+<div class="login-background">
+    <img src="assets/img/achtergrond.png" alt="" />
+</div>
     <div class="login-status" id="loginFormResponseMessage"></div>
     <input class="inputfield" type="text" name="username" placeholder="Gebruikersnaam">
     <p></p>
