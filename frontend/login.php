@@ -22,7 +22,7 @@ redirectToPage("dashboard");
     <img src="assets/img/achtergrond.png" alt="" />
 </div>
     <div class="login-status" id="loginFormResponseMessage"></div>
-    <h1 style="font-family: Bahnschrift; color: #FFF;">Inloggen</h1>
+    <h1 style="font-family: Bahnschrift; color: #FFF;"></h1>
     <input class="inputfield" type="text" name="username" placeholder="Gebruikersnaam">
     <p></p>
     <input class="inputfield" type="password" name="password" placeholder="Wachtwoord">
