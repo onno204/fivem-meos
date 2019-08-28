@@ -17,7 +17,6 @@ redirectToPage("dashboard");
 }
 ?>
 <form class="box" id="loginForm" attr-action="login" attr-type="login">
-    <h1 style="font-family: Bahnschrift; color: #FFF;">Inloggen</h1>
     <div class="login-status" id="loginFormResponseMessage"></div>
     <input class="inputfield" type="text" name="username" placeholder="Gebruikersnaam">
     <p></p>
