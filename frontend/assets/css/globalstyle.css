@@ -17,14 +17,6 @@ main{
   left: 22px;
   top: 6px;
 }
-.kop-achtergrond .meos-text{
-  color: white;
-  font-family: Bahnschrift;
-  font-size: 25px;
-  position: absolute;
-  right: 22px;
-  top: 12px;
-}
 footer{
   background-color: #004682;
   height: 33px;
