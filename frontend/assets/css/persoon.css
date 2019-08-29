@@ -22,7 +22,7 @@
 
 .naam{
     border: 1px solid #FFF;
-    text-align: left;
+    text-align: center;
     width: 600px;
     height: 50px;
     outline:none;
@@ -31,7 +31,7 @@
 
 .zoeken{
     border: 1px solid #000000;
-    text-align: left;
+    text-align: center;
     width: 600px;
     height: 50px;
     background-color: #566B77;
