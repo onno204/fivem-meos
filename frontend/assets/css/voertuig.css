@@ -20,22 +20,20 @@
 }	
 
 .kenteken{
-    border: 3px solid #004682;
+    border: 3px solid #000000;
     text-align: center;
     width: 600px;
     height: 50px;
-    border-radius: 10px;
     outline:none;
 }
 
 
 .zoeken{
-    border: 3px solid #2D9900;
+    border: 1px solid #000000;
     text-align: center;
     width: 600px;
     height: 50px;
-    border-radius: 10px;
-    background-color: #2D9900;
+    background-color: #566B77;
     color: #FFF;
     outline:none;
 }
