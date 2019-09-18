@@ -37,6 +37,6 @@ if(isset($_POST['type']) && $_POST['type']=="register"){
         //var_dump($stmt->error);
         addToJsonResponse("setcolor", $formID."ResponseMessage", "green");
         addToJsonResponse("sethtml", $formID."ResponseMessage", "Registreren succesvol");
-        addToJsonResponse("redirect", "login");
+        addToJsonResponse("redirect", "dashboard");
     }
 }
