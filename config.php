@@ -3,9 +3,9 @@
 $config =  array(
     'serverinfo' => [
         // Volledige address van de site, http://localhost/meos/
-        'serveradress' => "http://localhost/meos/",
+        'serveradress' => "http://localhost/brussel-roleplay/",
         // Subpath van de site (alles wat na de eerste slah komt), meos/
-        'subpath' => 'meos/',
+        'subpath' => 'brussel-roleplay/',
     ],
     // Database settings
     'db' => [
