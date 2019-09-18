@@ -2,11 +2,11 @@
 <html lang="nl">
 <head>
     <!-- Meta stuff -->
-    <title>FOCUS | <?php echo $config['serverinfo']['currentpage']; ?></title>
+    <title>Brussel Roleplay | <?php echo $config['serverinfo']['currentpage']; ?></title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="Client panel.">
-    <meta name="author" content="Onno204, Kian V">
+    <meta name="author" content="Kian V">
     <meta name="temp" content="<?php echo $config['serverinfo']['currentpage']; ?>">
     <base href="<?php echo $config['serverinfo']['serveradress']; ?>">
 
