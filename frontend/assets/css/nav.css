@@ -47,4 +47,7 @@ nav .back label{
 
 .button {
   margin-top: 25px;
+  background-color: #FFF;
+  color: #363839;
+  border: 5px Solid #363839;
 }
