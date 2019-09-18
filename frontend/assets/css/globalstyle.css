@@ -12,6 +12,11 @@ main{
   position: relative;
   z-index: 1;
 }
+
+.politielogo1 {
+margin-top:0px;
+}
+
 .kop-achtergrond .politielogo1 {
   position: absolute;
   left: 22px;
