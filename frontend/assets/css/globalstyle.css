@@ -13,6 +13,10 @@ main{
   z-index: 1;
 }
 
+.back {
+  color: #FFF;
+}
+
 .kop-achtergrond .politielogo1 {
   position: absolute;
   left: 22px;
