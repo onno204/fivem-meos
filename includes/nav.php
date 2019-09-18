@@ -16,5 +16,5 @@
         <a href="login?logout" <?php if('login'===$config['serverinfo']['currentpage']){echo "class=\"active\"";} ?> ><label class="fas fa-sign-out-alt"></label><span>Uitloggen</span></a>
         <a class="back" onclick="toggleNavBar()"><label class="fa fa-chevron-left"></label></a>
     </nav>
-<?php } ?>
+<?php?>
 <main>
