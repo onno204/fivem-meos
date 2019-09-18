@@ -1,24 +1,46 @@
-.ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color: #333;
+nav{
+  background-color: #273574;
+  height: calc(100% - 59px);
+  top: 59px;
+  width: 220px;
+  position: fixed;
+  transition-duration: .5s;
+  overflow-y: hidden;
 }
 
-.li {
-  float: left;
-}
 
-.li a {
-  display: block;
-  color: white;
-  text-align: center;
-  padding: 14px 16px;
+nav a{
   text-decoration: none;
+  color: white;
+  border: 3px solid #273574;
+  font-size: 18px;
+  min-width: 230px;
+  margin-bottom: 20px;
+  padding: 10px;
+  padding-left: 25px;
+  margin-top: 10px;
+  display: block;
+  transition-duration: .2s;
 }
-
-.li a:hover {
-  background-color: #111;
+nav a:hover{ color: grey; }
+nav a:first-of-type { margin-top: 80px; }
+nav a span{ padding-left: 6px; }
+nav a label{ cursor: pointer; }
+nav .back{
+  position: absolute;
+  top: 15px;
+  right: 0px;
+  margin: 0;
+  padding: 10px;
+  cursor: pointer;
+  min-width: unset;
 }
+nav .back label{
+  font-size: 30px;
+  cursor: pointer;
+}
+.nav-collaps{ width: 40px; }
+.nav-collaps a { padding-left: 7px; }
+.nav-collaps .back label{ transform: rotate(180deg); }
+.nav-collaps a span{ display: none; }
 .politielogo1 { margin-top: 10px; }
