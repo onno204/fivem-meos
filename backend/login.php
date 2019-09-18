@@ -33,7 +33,7 @@ if(isset($_POST['type']) && $_POST['type']=="login"){
 
     if($passwordcorrect === false){
       addToJsonResponse("setcolor", $formID."ResponseMessage", "red");
-      addToJsonResponse("sethtml", $formID."ResponseMessage", "Password incorrect");
+      addToJsonResponse("sethtml", $formID."ResponseMessage", "Wachtwoord is niet correct!");
       addToJsonResponse("unlockform", $formID);
       sendJsonResponseAndDie();
     }else{
