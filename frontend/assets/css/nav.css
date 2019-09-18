@@ -34,6 +34,7 @@ nav .back{
   padding: 10px;
   cursor: pointer;
   min-width: unset;
+  color: white;
 }
 
 .back {
@@ -49,9 +50,3 @@ nav .back label{
 .nav-collaps a span{ display: none; }
 .politielogo1 { margin-left: 100px; }
 
-.button {
-  margin-top: 25px;
-  background-color: #FFF;
-  color: #363839;
-  border: 10px solid #363839;
-}

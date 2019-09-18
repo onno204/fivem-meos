@@ -5,8 +5,7 @@
 
 <div class="kop-achtergrond">
     <img class= "politielogo1" src="assets/img/politielogo1.png" width="70" height="70">
-    <div class="navbar-nav">
-        <a href="dashboard.php"><button class="button">Home</button></a>             
+    <div class="navbar-nav">        
       </div>
 </div>
 <?php
