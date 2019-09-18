@@ -35,6 +35,10 @@ nav .back{
   cursor: pointer;
   min-width: unset;
 }
+
+back {
+  color:#FFF;
+}
 nav .back label{
   font-size: 30px;
   cursor: pointer;
