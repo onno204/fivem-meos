@@ -44,3 +44,7 @@ nav .back label{
 .nav-collaps .back label{ transform: rotate(180deg); }
 .nav-collaps a span{ display: none; }
 .politielogo1 { margin-left: 100px; }
+
+.button {
+  margin-top 10px;
+}
