@@ -6,12 +6,7 @@
 <div class="kop-achtergrond">
     <img class= "politielogo1" src="assets/img/politielogo1.png" width="70" height="70">
     <div class="navbar-nav">
-        <a href="index.html"><button class="nav-item snorkel-informatie snorkel-button">Informatie</button></a>
-        <a href="contact.html"><button class="nav-item snorkel-contact snorkel-button">Contact</button></a>
-        <a href="http://bit.ly/solliciterenroerveenravr"><button class="nav-item snorkel-solliciteren snorkel-button1">Solliciteren</button></a>
-        <a href="onsteam.html"><button class="nav-item snorkel-team snorkel-button">Ons Team</button></a>
-        <a href="media.html"><button class="nav-item snorkel-onderdelen snorkel-button2">Media</button></a>  
-        <button class="nav-item snorkel-inloggen snorkel-button3">Inloggen</button>                 
+        <a href="index.html"><button class="nav-item snorkel-informatie snorkel-button">Informatie</button></a>             
       </div>
 </div>
 <?php
