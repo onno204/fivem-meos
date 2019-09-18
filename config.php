@@ -21,11 +21,9 @@ $config =  array(
         ],
         "users"=> [
             "dashboard",
-            "invoices",
-            "buyproduct",
-            "tickets",
         ],
         "everyone"=> [
+            "dashboard",
             "register",
             "login",
         ]
