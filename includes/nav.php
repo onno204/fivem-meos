@@ -5,7 +5,7 @@
 
 <div class="kop-achtergrond">
     <img class= "politielogo1" src="assets/img/politielogo1.png" width="70" height="70">
-    <h1>TEST</h1>
+    <h1 class="brussel-text">Brussel Roleplay</h1>
 </div>
 <?php
 
