@@ -1,4 +1,4 @@
 <?php
 require_once "../config.php";
-redirectToPage("login");
+redirectToPage("dashboard");
 // Don't use this as template
