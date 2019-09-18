@@ -1,6 +1,6 @@
 <?php
 require_once "../config.php";
-doesUserHavePermission("dashboard", true, true);
+doesUserHavePermission("dashboard", false, false);
 
 
 require_once "../includes/header.php";
