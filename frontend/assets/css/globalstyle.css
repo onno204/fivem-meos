@@ -20,10 +20,11 @@ main{
 }
 footer{
   background-color: #363839;
-  height: 65px;
+  height: 45px;
   padding: 4px;
   width: 100%;
   text-align: center;
+  line-height: 1.15;
   color: #FFF;
   position: fixed;
   bottom: 0px;
