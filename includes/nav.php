@@ -2,6 +2,7 @@
 
 <div class="kop-achtergrond">
     <img class= "politielogo1" src="assets/img/politielogo1.png" width="121" height="31">
+    <a href="dashboard" <?php if('dashboard'===$config['serverinfo']['currentpage']){echo "class=\"active\"";} ?> >Dashboard</a>
 </div>
 
 <?php
