@@ -1,7 +1,7 @@
 
 
 <div class="kop-achtergrond">
-    <img class= "politielogo1" src="assets/img/politielogo1.png" width="121" height="31">
+    <img class= "politielogo1" src="assets/img/politielogo1.png" width="80" height="71">
 </div>
 
 <?php
