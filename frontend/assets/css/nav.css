@@ -43,7 +43,7 @@ nav .back label{
   font-size: 30px;
   cursor: pointer;
 }
-.nav-collaps{ width: 40px; }
+.nav-collaps{ width: 40px; margin-top:73px;}
 .nav-collaps a { padding-left: 7px; }
 .nav-collaps .back label{ transform: rotate(180deg); }
 .nav-collaps a span{ display: none; }
